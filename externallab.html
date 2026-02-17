@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Cards</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f4f4f4;
+    }
+    .container {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+    .card {
+      width: 220px;
+      padding: 20px;
+      background: white;
+      text-align: center;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .avatar {
+      width: 60px;
+      height: 60px;
+      margin: 0 auto 10px;
+      border-radius: 50%;
+      background: #1488ff;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+    }
+    .name {
+      font-weight: bold;
+      margin: 5px 0;
+    }
+    .info {
+      font-size: 14px;
+      color: gray;
+    }
+    @media (max-width: 600px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="avatar">JK</div>
+      <div class="name">Jeet Kumar</div>
+      <div class="info">
+        B.Tech - CSE-26<br>
+        Roll No: 21CS1007<br>
+        1st Year
+      </div>
+    </div>
+    <div class="card">
+      <div class="avatar">RK</div>
+      <div class="name">Rohit Kumar</div>
+      <div class="info">
+        B.Tech - ECE<br>
+        Roll No: 2025b010101727<br>
+        1st Year
+      </div>
+    </div>
+  </div>
+</body>
+</html>
